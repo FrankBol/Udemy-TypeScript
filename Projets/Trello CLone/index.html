@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trello Clone</title>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Espace de travaille</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="main-content">
+
+        <div class="items-container" draggable="true">
+            <div class="top-container">
+                <h2>En cours</h2>
+                <button class="delete-container-btn">x</button>
+            </div>
+            <ul></ul>
+            <button class="add-item-btn">Ajouter un Item</button>
+            <form autocomplete="off">
+                <div class="top-form-container">
+                    <label for="item">Ajouter un nouvel Item</label>
+                    <button type="button"class="close-form-btn">x</button>
+                </div>
+                <input type="text" id="item">
+                <span class="validation-msg"></span>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+        <div class="items-container" draggable="true">
+            <div class="top-container">
+                <h2>À Faire</h2>
+                <button class="delete-container-btn">x</button>
+            </div>
+            <ul></ul>
+            <button class="add-item-btn">Ajouter un Items</button>
+            <form autocomplete="off">
+                <div class="top-form-container">
+                    <label for="item">Ajouter un nouvel Item</label>
+                    <button type="button" class="close-form-btn">x</button>
+                </div>
+                <input type="text" id="item">
+                <span class="validation-msg"></span>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+        <div class="items-container" draggable="true">
+            <div class="top-container">
+                <h2>Terminer</h2>
+                <button class="delete-container-btn">x</button>
+            </div>
+            <ul></ul>
+            <button class="add-item-btn">Ajouter un Items</button>
+            <form autocomplete="off">
+                <div class="top-form-container">
+                    <label for="item">Ajouter un nouvel Item</label>
+                    <button type="button" class="close-form-btn">x</button>
+                </div>
+                <input type="text" id="item">
+                <span class="validation-msg"></span>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+        <div class="add-new-container">
+            <button class="add-container-btn">Un nouveau Conteneur</button>
+            <form autocomplete="off">
+                <div class="top-form-container">
+                    <label for="new-container">Ajouter un nouvel Conteneur</label>
+                    <button class="close-form-btn close-add-list">x</button>
+                </div>
+                <input type="text" id="new-container">
+                <span class="validation-msg"></span>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
